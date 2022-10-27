@@ -18,8 +18,9 @@ int main() {
     // loop and wait for the consumer to post to the semaphore before producing any data
     char item = 'a';
     int in = 0;
+    printf("\n");
     for (int i = 0; i < MAX_BUF; ++i) {
-        printf("hello?");
+        //printf("hello?");
         if (sem_wait(&pcbufs->empty) == -1) errExit("Failed to wait on the reader semaphore");      
         pcbufs->buf[in] = item;
         printf("producer sent item %d :%c\n", in, item);
