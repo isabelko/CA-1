@@ -1,5 +1,6 @@
 #include "producer_consumer.h"
 
+
 int main() {
     int fd = shm_open("/producer-consumer", O_CREAT | O_EXCL | O_RDWR, S_IRUSR | S_IWUSR);
 
