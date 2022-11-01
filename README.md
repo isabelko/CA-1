@@ -24,3 +24,8 @@ One issue I had was that I couldn't find a way to have the producer and consumer
 
 I learned how to create a shared memory space. I also learned about how to use semaphores in order to make sure the producer didn't produce too many variables and the consumer wasn't consuming too many variables. 
 
+
+## test 
+```code 
+ygbrrryr
+```
