@@ -70,7 +70,7 @@ One issue I had was that I couldn't find a way to have the producer and consumer
 
 ## Lessons
 
-I learned how to create a shared memory space. I also learned about how to use semaphores in order to make sure the producer didn't produce too many variables and the consumer wasn't consuming too many variables. 
+I learned how to create a shared memory space. I also learned about how to use semaphores in order to make sure the producer didn't produce too many variables and the consumer wasn't consuming too many variables. I also learned how to create a virtual machine and select a OS to run in the virtual machine. The virtual machine was my favorite part of the lab. I had tons of versions of of linux and seeing the differences was super cool. 
 
 
 
