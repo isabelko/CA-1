@@ -9,7 +9,7 @@ I wrote my code in virtual box which was running linux ubuntu 22.04.1 LTS. I wro
 
 In the terminal you would type "./compile.sh" which has "gcc producer.c -pthread -lrt -o producer
 and gcc consumer.c -pthread -lrt -o consumer" in it. Next you would type "./producer & ./consumer"
-which will then run the 2 processes. Sometimes the programs don't end themselves but after text stops you hit enter and it will end the program. 
+which will then run the 2 processes. Sometimes the programs don't end themselves but after text stops you hit enter and it will end the program. It will then say ./consumer and ./producer are done running. 
 
 ## Output of Program 
 ```code 
@@ -53,12 +53,15 @@ producer sent value "s" to location 0
 Consumer recieved data from location 0: it recieved the value "s"
 producer sent value "t" to location 1
 Consumer recieved data from location 1: it recieved the value "t"
+
+[1]- Done                   ./producer
+[2]+ Done                   ./consumer
 ```
 
 ## What Does my Code do?
 
 My producer will pass char's starting from 'a' and will continue moving up the alphabet until 
-the TOTAL_CONS_PRODUCE variable is reached. The TOTAL_CONS_PRODUCE variable determines how many times the producer and consumer will produce and consume a variable. I have the value to be 20 right now so it will produce and consume 20 variables meaning it should end by producing the variable 't' and then consumer 't'. The buffer size is set to 2 and the text that prints will tell the user if the varibale was placed or consumed from the first or second slot in the buffer. The text also states what variable was produced or recieved. 
+the TOTAL_CONS_PRODUCE variable is reached. The TOTAL_CONS_PRODUCE variable determines how many times the producer and consumer will produce and consume a variable. I have the value to be 20 right now so it will produce and consume 20 variables meaning it should end by producing the variable 't' and then consumer 't'. The buffer size is set to 2 and the text that prints will tell the user if the varibale was placed or consumed from the first or second slot in the buffer. The text also states what variable was produced or recieved. The variable being passed can also be changed from a char starting at 'a' to a int starting at lets say 0. 
 
 ## Challenges
 
