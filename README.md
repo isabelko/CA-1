@@ -8,7 +8,7 @@ I wrote my code in virtual box which was running linux ubuntu 22.04.1 LTS. I wro
 ## How to Run my Program
 
 In the terminal you would type "./compile.sh" which has "gcc producer.c -pthread -lrt -o producer
-and gcc consumer.c -pthread -lrt -o consumer" in it. Next you would type "./producer & ./consumer"
+and gcc consumer.c -pthread -lrt -o consumer" in it. You can also type both gcc statements out but ./compile.sh does that for you. Next you would type "./producer & ./consumer"
 which will then run the 2 processes. Sometimes the programs don't end themselves but after text stops you hit enter and it will end the program. It will then say ./consumer and ./producer are done running. 
 
 ## Output of Program 
