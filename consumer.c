@@ -12,10 +12,10 @@ int main() {
     // tell producer we're ready for the data
     if (sem_post(&pcbufs->empty) == -1) errExit("Failed to post on the reader semaphore");  
     int out = 0;
-    for (int i = 0; i < MAX_BUF; ++i) {
+    for (int i = 0; i < TOTAL_CONS_PRODUCE; ++i) {
         if (sem_wait(&pcbufs->full) == -1) errExit("Failed to wait on the writer semaphore");
         char item = pcbufs->buf[out];
-        printf("Recieved data %d: %c\n", out, item);
+        printf("Consumer recieved data from location %d: it recieved the value \"%c\"\n", out, item);
         out = (out + 1) % BUF_SIZE;
         if (sem_post(&pcbufs->empty) == -1) errExit("Failed to post on the reader semaphore");
     }

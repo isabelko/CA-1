@@ -10,7 +10,7 @@
                         } while (0)
 
 #define BUF_SIZE 2
-#define MAX_BUF 20
+#define TOTAL_CONS_PRODUCE 20
 
 struct pcbuf {
     sem_t empty;

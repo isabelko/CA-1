@@ -19,11 +19,11 @@ int main() {
     char item = 'a';
     int in = 0;
     printf("\n");
-    for (int i = 0; i < MAX_BUF; ++i) {
+    for (int i = 0; i < TOTAL_CONS_PRODUCE; ++i) {
         //printf("hello?");
         if (sem_wait(&pcbufs->empty) == -1) errExit("Failed to wait on the reader semaphore");      
         pcbufs->buf[in] = item;
-        printf("producer sent item %d :%c\n", in, item);
+        printf("producer sent value \"%c\" to location %d \n", item, in);
         in = (in + 1) % BUF_SIZE;
         item++;
         if (sem_post(&pcbufs->full) == -1) errExit("Failed to post on the writer semaphore"); 
