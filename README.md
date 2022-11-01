@@ -20,5 +20,7 @@ The biggest challenge I faced was making sure the consumer and producer were in 
 
 One issue I had was that I couldn't find a way to have the producer and consumer produce and consume at random without losing data. So my code currently will produce a value and store it in the first location and then the consumer will consume that value. The prodcer will then produce a value and store it in the second location and the consumer will consume from that location. It will then produce and consume in the first location and continue this loop. Another issue is that my code will run completely through but once it finishes you have to hit enter at the end in order to kill the processes and memory space allocated. 
 
-##
+## Lessons
+
+I learned how to create a shared memory space. I also learned about how to use 
 
