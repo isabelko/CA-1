@@ -61,7 +61,7 @@ Consumer recieved data from location 1: it recieved the value "t"
 ## What Does my Code do?
 
 My producer will pass char's starting from 'a' and will continue moving up the alphabet until 
-the TOTAL_CONS_PRODUCE variable is reached. The TOTAL_CONS_PRODUCE variable determines how many times the producer and consumer will produce and consume a variable. I have the value to be 20 right now so it will produce and consume 20 variables meaning it should end by producing the variable 't' and then consumer 't'. The buffer size is set to 2 and the text that prints will tell the user if the varibale was placed or consumed from the first or second slot in the buffer. The text also states what variable was produced or recieved. The variable being passed can also be changed from a char starting at 'a' to a int starting at lets say 0. 
+the TOTAL_CONS_PRODUCE variable is reached. The TOTAL_CONS_PRODUCE variable determines how many times the producer and consumer will produce and consume a variable. I have the value to be 20 right now so it will produce and consume 20 variables meaning it should end by producing the variable 't' and then consumer 't'. The buffer size is set to 2 and the text that prints will tell the user if the varibale was placed or consumed from the first or second slot (slot 0 or 1 on the table) in the buffer. The text also states what variable was produced or recieved. The variable being passed can also be changed from a char starting at 'a' to a int starting at lets say 0. 
 
 ## Challenges
 
