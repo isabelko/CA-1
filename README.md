@@ -25,7 +25,46 @@ One issue I had was that I couldn't find a way to have the producer and consumer
 I learned how to create a shared memory space. I also learned about how to use semaphores in order to make sure the producer didn't produce too many variables and the consumer wasn't consuming too many variables. 
 
 
-## test 
+## Output of program 
 ```code 
-ygbrrryr
+producer sent value "a" to location 0
+Consumer recieved data from location 0: it recieved the value "a"
+producer sent value "b" to location 1
+Consumer recieved data from location 1: it recieved the value "b"
+producer sent value "c" to location 0
+Consumer recieved data from location 0: it recieved the value "c"
+producer sent value "d" to location 1
+Consumer recieved data from location 1: it recieved the value "d"
+producer sent value "e" to location 0
+Consumer recieved data from location 0: it recieved the value "e"
+producer sent value "f" to location 1
+Consumer recieved data from location 1: it recieved the value "f"
+producer sent value "g" to location 0
+Consumer recieved data from location 0: it recieved the value "g"
+producer sent value "h" to location 1
+Consumer recieved data from location 1: it recieved the value "h"
+producer sent value "i" to location 0
+Consumer recieved data from location 0: it recieved the value "i"
+producer sent value "j" to location 1
+Consumer recieved data from location 1: it recieved the value "j"
+producer sent value "k" to location 0
+Consumer recieved data from location 0: it recieved the value "k"
+producer sent value "l" to location 1
+Consumer recieved data from location 1: it recieved the value "l"
+producer sent value "m" to location 0
+Consumer recieved data from location 0: it recieved the value "m"
+producer sent value "n" to location 1
+Consumer recieved data from location 1: it recieved the value "n"
+producer sent value "o" to location 0
+Consumer recieved data from location 0: it recieved the value "o"
+producer sent value "p" to location 1
+Consumer recieved data from location 1: it recieved the value "p"
+producer sent value "q" to location 0
+Consumer recieved data from location 0: it recieved the value "q"
+producer sent value "r" to location 1
+Consumer recieved data from location 1: it recieved the value "r"
+producer sent value "s" to location 0
+Consumer recieved data from location 0: it recieved the value "s"
+producer sent value "t" to location 1
+Consumer recieved data from location 1: it recieved the value "t"
 ```
