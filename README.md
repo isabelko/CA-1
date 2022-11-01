@@ -9,7 +9,7 @@ I wrote my code in virtual box which was running linux ubuntu 22.04.1 LTS. I wro
 
 In the terminal you would type "./compile.sh" which has "gcc producer.c -pthread -lrt -o producer
 and gcc consumer.c -pthread -lrt -o consumer" in it. Next you would type "./producer & ./consumer"
-which will then run the 2 processes. 
+which will then run the 2 processes. Sometimes the programs don't end themselves but after text stops you hit enter and it will end the program. 
 
 ## Output of Program 
 ```code 
@@ -66,7 +66,7 @@ The biggest challenge I faced was making sure the consumer and producer were in 
 
 ## Issues
 
-One issue I had was that I couldn't find a way to have the producer and consumer produce and consume at random without losing data. So my code currently will produce a value and store it in the first location and then the consumer will consume that value. The prodcer will then produce a value and store it in the second location and the consumer will consume from that location. It will then produce and consume in the first location and continue this loop. Another issue is that my code will run completely through but once it finishes you have to hit enter at the end in order to kill the processes and memory space allocated. 
+One issue I had was that I couldn't find a way to have the producer and consumer produce and consume at random without losing data. So my code currently will produce a value and store it in the first location and then the consumer will consume that value. The prodcer will then produce a value and store it in the second location and the consumer will consume from that location. It will then produce and consume in the first location and continue this loop. Another issue is that my code will run completely through but once it finishes you have to hit enter at the end in order to kill the processes and memory space allocated. A final issue is that sometimes when you run the code for the first time it will fail and say it couldn't open up the shared memory, however, if you run it a second time it will work. 
 
 ## Lessons
 
